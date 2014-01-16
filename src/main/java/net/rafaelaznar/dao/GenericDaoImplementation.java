@@ -7,7 +7,6 @@ package net.rafaelaznar.dao;
 
 import java.lang.reflect.Method;
 import java.lang.reflect.ParameterizedType;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
