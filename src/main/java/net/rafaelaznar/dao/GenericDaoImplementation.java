@@ -109,7 +109,7 @@ public class GenericDaoImplementation<TIPO_OBJETO> implements GenericDao<TIPO_OB
                                         method.invoke(oBean, Integer.parseInt(oMysql.getOne(strTabla, method.getName().substring(3).toLowerCase(Locale.ENGLISH), (Integer) metodo_getId.invoke(oBean))));
                                         break;
                                     case "java.util.Date":
-                                        SimpleDateFormat oSimpleDateFormat = new SimpleDateFormat("dd-MM-yyyy");
+                                        SimpleDateFormat oSimpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
                                         method.invoke(oBean, oSimpleDateFormat.parse(oMysql.getOne(strTabla, method.getName().substring(3).toLowerCase(Locale.ENGLISH), (Integer) metodo_getId.invoke(oBean))));
                                         break;
                                     default:
